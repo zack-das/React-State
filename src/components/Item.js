@@ -9,7 +9,7 @@ function Item({ name, category }) {
     setInCart(!inCart);
   };
 
-  // Determine className, button text, and button style based on state
+  
   const liClassName = inCart ? "in-cart" : "";
   const buttonText = inCart ? "Remove From Cart" : "Add to Cart";
   
@@ -23,7 +23,7 @@ function Item({ name, category }) {
       <button 
         className="add" 
         onClick={toggleCart}
-        style={buttonStyle} // Apply conditional styling
+        style={buttonStyle} 
       >
         {buttonText}
       </button>
