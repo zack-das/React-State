@@ -11,7 +11,7 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Determine className based on state
+
   const appClass = isDarkMode ? "App dark" : "App light";
 
   return (
