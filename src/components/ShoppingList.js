@@ -10,7 +10,7 @@ function ShoppingList({ items }) {
     setSelectedCategory(event.target.value);
   };
 
-  // Filter items based on selected category
+  // Filter based on selected category
   const filteredItems = selectedCategory === "All" 
     ? items 
     : items.filter(item => item.category === selectedCategory);
